@@ -1,0 +1,33 @@
+.why{
+  .why__title{
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+
+  .why__contents{
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+    .why__content{
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@include breakpoint(medium down) {
+  .why{
+    .why__title{
+      margin-top: 50px;
+      margin-bottom: 35px;
+    }
+
+
+    .why__contents{
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      .why__content{
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

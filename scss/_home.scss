@@ -1,0 +1,68 @@
+.primary-color{
+  color: $primary;
+}
+.secondary-color{
+  color: $secondary;
+}
+.third-color{
+  color: $third;
+}
+.body-font-color{
+  color: $body-font-color;
+}
+
+
+.button-link{
+  color: $third;
+  font-size: 18px;
+  font-weight: 1.2;
+  text-transform: uppercase;
+  cursor: pointer;
+  min-height: 80px;
+  min-width: 300px;
+  text-align: center;
+  padding: 29px 10px;
+  transition: color 0.3s, background-color 0.3s, border 0.3s;
+
+  &:hover{
+    color: $primary;
+    border: 1px solid $primary;
+    background-color: $third;
+  }
+}
+
+.button-link-primary-color{
+  background-color: $primary;
+  border: 1px solid $primary;
+}
+
+.button-link-secondary-color{
+  background-color: $secondary;
+  border: 1px solid $secondary;
+}
+
+.section-title-content{
+  h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    strong{
+      font-weight: 700;
+    }
+  }
+}
+
+.no-link{
+
+}
+
+
+@include breakpoint(small down) {
+  .button-link{
+    min-width: 245px;
+  }
+}
+
+
+
+

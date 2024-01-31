@@ -1,0 +1,124 @@
+.discover-slider__wrapper {
+  margin-bottom: 100px;
+
+  .slick-track {
+    display: flex;
+  }
+
+  .slick-list {
+    overflow: hidden;
+  }
+
+  .slick-slide {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .slick-list{
+    margin: 0 -15px;
+  }
+
+  .discover-slider__item{
+    position: relative;
+    .discover-slider__top{
+      max-width: 100%;
+      height: auto;
+      img{
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .discover-slider__center{
+      background-color: $third;
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-bottom: 90px;
+      padding-right: 20px;
+      overflow: hidden;
+      max-height: 240px;
+
+      .discover-slider__title{
+        text-transform: uppercase;
+        color: $secondary;
+        margin-bottom: 13px;
+        line-height: 1.2;
+      }
+      .discover-slider__text{
+        line-height: 1.2;
+        margin-bottom: 0;
+      }
+    }
+
+    .discover-slider__bottom{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+
+      .discover-slider__link{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $third;
+        background-color: $secondary;
+        border: 1px solid $secondary;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: color 0.3s, background-color 0.3s, border 0.3s;
+
+        &:hover{
+          color: $primary;
+          border: 1px solid $primary;
+          background-color: $third;
+
+          .discover-slider__link{
+            .discover-slider__arrow{
+              .discover-slider__arrow-icon{
+                stroke: $primary;
+              }
+            }
+          }
+        }
+
+        .discover-slider__price{
+          p{
+            line-height: 1.2;
+            display: block;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            strong{
+              font-size: 18px;
+              font-weight: 400;
+            }
+          }
+        }
+        .discover-slider__arrow{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .discover-slider__arrow-icon{
+            display: block;
+            fill: none;
+            stroke: $third;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@include breakpoint(medium down) {
+  .discover-slider__wrapper {
+    .discover-slider__item {
+      .discover-slider__center {
+        max-height: 440px;
+      }
+    }
+  }
+}
